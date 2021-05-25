@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/edit_text_style"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/buttonCompute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCompute"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_style"
+        android:text="0"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textColor="@color/teal_700"
+        />
+
+    <ListView
+        android:id="@+id/listViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>
